@@ -29,7 +29,7 @@ chance_of_rain = hourly[0]["chanceofrain"]
 
 # Table
 table=[
-    ["current_condition","temp_c",temperature],
+    ["current_condition","temp_C",temperature],
     ["current_condition","weatherDesc",condition],
     ["nearest_area","areaName",area],
     ["nearest_area","country",country],
