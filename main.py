@@ -1,21 +1,20 @@
-numbers = [10, 15, 20, 25, 30]
-total = 0
+import requests
 
-for i in range(0, len(numbers)):
-    if numbers[i] % 2 == 0:
-        print("Even number:", numbers[i])
-        total += numbers[i]
-    else:
-        print("Odd number:", numbers[i])
+url = "https://wttr.in/Dehradun?format=j1"
 
-print("Total of even numbers:", total)
+response = requests.get(url)
+data = response.json()
 
-count = 0
+current = data["current_condition"][0]
+area = data["nearest_area"][0]
+weather = data["weather"][0]
 
-while count < len(numbers):
-    if numbers[count] > 20:
-        print("Large:", numbers[count])
-    count = count + 2
+print("Weather Information")
+print("-------------------")
 
-for num in numbers:
-    print("Square:", num ** 2)
+print("City:", area["areaName"][0]["value"])
+print("Country:", area["country"][0]["value"])
+print("Region:", area["region"][0]["value"])
+print("Temperature:", current["temp_C"], "°C")
+print("Weather:", current["weatherDesc"][0]["value"])
+print("Chance of Rain:", weather["hourly"][0]["chanceofrain"], "%")
