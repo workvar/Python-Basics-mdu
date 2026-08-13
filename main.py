@@ -11,10 +11,25 @@ for i in range(0, len(numbers)):
 print("Total of even numbers:", total)
 
 count = 0
+ main
+ main
 while count < len(numbers):
     if numbers[count] > 20:
         print("Large:", numbers[count])
     count = count + 2
+while (count < len(numbers)):
+    if(numbers[count] > 20):
+while count < len(numbers):
+
+main
+ if (numbers[count] > 20):
+    
+    if numbers[count] > 20:
+ main
+main
+        print("Large:", numbers[count])
+        count = count + 2
+        main
 
 for num in numbers:
     print("Square:", num ** 2)
