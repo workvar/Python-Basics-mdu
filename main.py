@@ -2,17 +2,7 @@ numbers = [10, 15, 20, 25, 30]
 total = 0
 
 for i in range(0, len(numbers)):
- main
-main
     if numbers[i] % 2 == 0:
-
-    if (numbers[i] % 2 == 0):
- main
-    if(numbers[i] % 2== 0):
-    if numbers[i] % 2 == 0:
-      
-      main
- main
         print("Even number:", numbers[i])
         total += numbers[i]
     else:
@@ -42,10 +32,4 @@ main
         main
 
 for num in numbers:
- main
- main
     print("Square:", num ** 2)
-    print("Square:", num ** 20)
- main
-    print("Square:", num ** 2)
- main
